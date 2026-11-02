@@ -12,6 +12,8 @@ The goal is to reproduce yabai's behavior and command interface on KDE. A useful
 subset is implemented, but **kwabai is not yet a complete drop-in replacement**.
 Linux application IDs and KDE desktop semantics also differ from macOS.
 
+https://github.com/user-attachments/assets/b72a8381-32d1-40ba-93b5-ef676db3b5fa
+
 **Status: early development.** The native effect runs inside KWin, so a defect
 can affect the desktop session. Development and live testing have used KDE
 Plasma Wayland on Arch-based Linux. Other distributions and KWin releases need
