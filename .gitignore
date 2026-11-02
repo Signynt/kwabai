@@ -1,0 +1,10 @@
+/build/
+/stage/
+*.user
+/docs/
+/compatibility/
+
+# Local Python caches and diagnostic output
+__pycache__/
+*.py[cod]
+*.log

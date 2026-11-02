@@ -1,0 +1,20 @@
+#!/bin/sh
+# Yabai-style configuration for KDE. No context manage commands are required.
+set -eu
+
+kwabai -m config layout bsp
+kwabai -m config top_padding 0
+kwabai -m config bottom_padding 10
+kwabai -m config left_padding 10
+kwabai -m config right_padding 10
+kwabai -m config window_gap 10
+kwabai -m config insert_feedback_color 0xff33a4f5
+
+# KWin uses Linux application IDs rather than macOS application names.
+# Confirm yours with: kwabai -m query --windows id,app,title
+kwabai -m rule --add label=system-settings 'app=^(systemsettings|org\.kde\.systemsettings)$' 'title=.*' manage=off
+kwabai -m rule --add label=info-windows 'title=.*Info' manage=off
+
+# To make excluded windows always on top, add layer=above to their rules;
+# see examples/layer-rules.sh. Window shadows remain controlled by KDE.
+# No sudo or --load-sa is needed on KDE. Keyboard shortcuts also remain in KDE.

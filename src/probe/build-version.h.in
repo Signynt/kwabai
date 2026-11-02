@@ -1,0 +1,5 @@
+#pragma once
+#include <config-kwin.h>
+#include <string_view>
+static_assert(std::string_view(KWIN_PLUGIN_VERSION_STRING) == "@KWABAI_KWIN_VERSION@",
+              "KWin headers changed: reconfigure and rebuild kwabai");

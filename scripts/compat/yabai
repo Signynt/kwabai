@@ -1,0 +1,6 @@
+#!/bin/sh
+# SPDX-License-Identifier: MIT
+# Optional, checkout-local command alias. Does not install a global yabai command.
+set -eu
+script_dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+exec "${KWABAI_BIN:-$script_dir/../../build/kwabai}" "$@"

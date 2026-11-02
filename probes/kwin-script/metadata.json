@@ -1,0 +1,6 @@
+{
+ "KPackageStructure": "KWin/Script",
+ "KPlugin": {"Id": "kwabai-probe", "Name": "Kwabai Script Probe", "Description": "Manual two-window feasibility probe", "Version": "0.1.0", "License": "MIT", "EnabledByDefault": false},
+ "X-Plasma-API": "javascript",
+ "X-Plasma-MainScript": "code/main.js"
+}

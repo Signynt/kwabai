@@ -1,0 +1,11 @@
+{
+  "X-Kwabai-KWin-Version": "@KWABAI_KWIN_VERSION@",
+  "X-Kwabai-Effect-Id": "@KWABAI_EFFECT_ID@",
+  "KPlugin": {
+    "Name": "Kwabai Feasibility Probe",
+    "Description": "Opt-in two-window integration probe",
+    "Category": "Tools",
+    "EnabledByDefault": false,
+    "License": "MIT"
+  }
+}
